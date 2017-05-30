@@ -1,3 +1,5 @@
+package telas;
+
 public class TelaEspera extends javax.swing.JFrame {
 
     /**
@@ -20,7 +22,6 @@ public class TelaEspera extends javax.swing.JFrame {
         pnlTelaEspera = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(800, 500));
 
         javax.swing.GroupLayout pnlTelaEsperaLayout = new javax.swing.GroupLayout(pnlTelaEspera);
         pnlTelaEspera.setLayout(pnlTelaEsperaLayout);

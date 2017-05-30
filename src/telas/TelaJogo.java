@@ -1,3 +1,5 @@
+package telas;
+
 public class TelaJogo extends javax.swing.JFrame {
 
     /**
