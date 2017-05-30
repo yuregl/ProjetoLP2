@@ -6,7 +6,7 @@ public class TelaInicio extends javax.swing.JFrame {
     /**
      * Creates new form TelaInicio
      */
-    
+    private TelaLogin login = new TelaLogin();
     private Usuario user;
     
     public TelaInicio(Usuario user) {
@@ -34,6 +34,11 @@ public class TelaInicio extends javax.swing.JFrame {
         btnTISair = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowClosing(java.awt.event.WindowEvent evt) {
+                formWindowClosing(evt);
+            }
+        });
 
         btnTIJogar.setText("Jogar");
         btnTIJogar.addActionListener(new java.awt.event.ActionListener() {
@@ -45,6 +50,11 @@ public class TelaInicio extends javax.swing.JFrame {
         btnTIInstrucoes.setText("Instruções");
 
         btnTISair.setText("Sair");
+        btnTISair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTISairActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout pnlTelaInicioLayout = new javax.swing.GroupLayout(pnlTelaInicio);
         pnlTelaInicio.setLayout(pnlTelaInicioLayout);
@@ -90,6 +100,17 @@ public class TelaInicio extends javax.swing.JFrame {
         esp.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnTIJogarActionPerformed
+
+    private void btnTISairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTISairActionPerformed
+        // TODO add your handling code here:
+        login.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnTISairActionPerformed
+
+    private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
+        // TODO add your handling code here:
+        login.setVisible(true);
+    }//GEN-LAST:event_formWindowClosing
 
     /**
      * @param args the command line arguments
