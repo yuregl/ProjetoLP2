@@ -34,6 +34,7 @@ public class TelaInicio extends javax.swing.JFrame {
         btnTIJogar = new javax.swing.JButton();
         btnTIInstrucoes = new javax.swing.JButton();
         btnTISair = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -58,28 +59,36 @@ public class TelaInicio extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/LOGOinicio.png"))); // NOI18N
+
         javax.swing.GroupLayout pnlTelaInicioLayout = new javax.swing.GroupLayout(pnlTelaInicio);
         pnlTelaInicio.setLayout(pnlTelaInicioLayout);
         pnlTelaInicioLayout.setHorizontalGroup(
             pnlTelaInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlTelaInicioLayout.createSequentialGroup()
-                .addContainerGap(183, Short.MAX_VALUE)
+                .addGap(173, 173, 173)
                 .addGroup(pnlTelaInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(btnTIJogar, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnTIInstrucoes, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnTISair, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(172, 172, 172))
+                .addContainerGap(182, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlTelaInicioLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 356, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(69, 69, 69))
         );
         pnlTelaInicioLayout.setVerticalGroup(
             pnlTelaInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlTelaInicioLayout.createSequentialGroup()
-                .addContainerGap(125, Short.MAX_VALUE)
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
                 .addComponent(btnTIJogar)
-                .addGap(40, 40, 40)
+                .addGap(18, 18, 18)
                 .addComponent(btnTIInstrucoes)
-                .addGap(36, 36, 36)
+                .addGap(18, 18, 18)
                 .addComponent(btnTISair)
-                .addGap(54, 54, 54))
+                .addGap(73, 73, 73))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -153,6 +162,7 @@ public class TelaInicio extends javax.swing.JFrame {
     private javax.swing.JButton btnTIInstrucoes;
     private javax.swing.JButton btnTIJogar;
     private javax.swing.JButton btnTISair;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel pnlTelaInicio;
     // End of variables declaration//GEN-END:variables
 }
