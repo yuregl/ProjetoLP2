@@ -117,7 +117,7 @@ public class TelaLogin extends javax.swing.JFrame {
         pnlTelaLoginLayout.setVerticalGroup(
             pnlTelaLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlTelaLoginLayout.createSequentialGroup()
-                .addGap(121, 121, 121)
+                .addGap(107, 107, 107)
                 .addGroup(pnlTelaLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblTLNomeUsuario)
                     .addComponent(txtTLNomeUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -129,7 +129,7 @@ public class TelaLogin extends javax.swing.JFrame {
                 .addGroup(pnlTelaLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnTLEntra)
                     .addComponent(btnTLCadastra))
-                .addContainerGap(70, Short.MAX_VALUE))
+                .addContainerGap(84, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

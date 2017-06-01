@@ -34,6 +34,8 @@ public class TelaCadastro extends javax.swing.JFrame {
         lblTCConfirmaSenha = new javax.swing.JLabel();
         txtTCSenha = new javax.swing.JPasswordField();
         txtTCConfirmaSenha = new javax.swing.JPasswordField();
+        lblTCEmail = new javax.swing.JLabel();
+        txtTCEmail = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -59,36 +61,50 @@ public class TelaCadastro extends javax.swing.JFrame {
         lblTCConfirmaSenha.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         lblTCConfirmaSenha.setText("Confirmar Senha:");
 
+        lblTCEmail.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lblTCEmail.setText("Email:");
+
+        txtTCEmail.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtTCEmailActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout pnlTelaCadastraLayout = new javax.swing.GroupLayout(pnlTelaCadastra);
         pnlTelaCadastra.setLayout(pnlTelaCadastraLayout);
         pnlTelaCadastraLayout.setHorizontalGroup(
             pnlTelaCadastraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlTelaCadastraLayout.createSequentialGroup()
-                .addGroup(pnlTelaCadastraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(64, 64, 64)
+                .addGroup(pnlTelaCadastraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(pnlTelaCadastraLayout.createSequentialGroup()
-                        .addGap(49, 49, 49)
+                        .addComponent(lblTCConfirmaSenha)
+                        .addGap(10, 10, 10)
+                        .addComponent(txtTCConfirmaSenha))
+                    .addGroup(pnlTelaCadastraLayout.createSequentialGroup()
+                        .addGroup(pnlTelaCadastraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblTCNomeUsuario)
+                            .addComponent(lblTCSenha)
+                            .addComponent(lblTCEmail))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(pnlTelaCadastraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(pnlTelaCadastraLayout.createSequentialGroup()
-                                .addGroup(pnlTelaCadastraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblTCNomeUsuario)
-                                    .addComponent(lblTCSenha))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(pnlTelaCadastraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(txtTCNomeUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
-                                    .addComponent(txtTCSenha)))
-                            .addGroup(pnlTelaCadastraLayout.createSequentialGroup()
-                                .addComponent(lblTCConfirmaSenha)
-                                .addGap(10, 10, 10)
-                                .addComponent(txtTCConfirmaSenha))))
-                    .addGroup(pnlTelaCadastraLayout.createSequentialGroup()
-                        .addGap(217, 217, 217)
-                        .addComponent(btnTCCadastra)))
-                .addContainerGap(74, Short.MAX_VALUE))
+                            .addComponent(txtTCEmail)
+                            .addComponent(txtTCNomeUsuario)
+                            .addComponent(txtTCSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(70, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlTelaCadastraLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnTCCadastra)
+                .addGap(225, 225, 225))
         );
         pnlTelaCadastraLayout.setVerticalGroup(
             pnlTelaCadastraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlTelaCadastraLayout.createSequentialGroup()
-                .addGap(121, 121, 121)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlTelaCadastraLayout.createSequentialGroup()
+                .addContainerGap(112, Short.MAX_VALUE)
+                .addGroup(pnlTelaCadastraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblTCEmail)
+                    .addComponent(txtTCEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(pnlTelaCadastraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblTCNomeUsuario)
                     .addComponent(txtTCNomeUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -100,9 +116,9 @@ public class TelaCadastro extends javax.swing.JFrame {
                 .addGroup(pnlTelaCadastraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblTCConfirmaSenha)
                     .addComponent(txtTCConfirmaSenha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(35, 35, 35)
+                .addGap(37, 37, 37)
                 .addComponent(btnTCCadastra)
-                .addContainerGap(60, Short.MAX_VALUE))
+                .addGap(65, 65, 65))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -159,6 +175,10 @@ public class TelaCadastro extends javax.swing.JFrame {
         
     }//GEN-LAST:event_btnTCCadastraActionPerformed
 
+    private void txtTCEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTCEmailActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtTCEmailActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -197,10 +217,12 @@ public class TelaCadastro extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnTCCadastra;
     private javax.swing.JLabel lblTCConfirmaSenha;
+    private javax.swing.JLabel lblTCEmail;
     private javax.swing.JLabel lblTCNomeUsuario;
     private javax.swing.JLabel lblTCSenha;
     private javax.swing.JPanel pnlTelaCadastra;
     private javax.swing.JPasswordField txtTCConfirmaSenha;
+    private javax.swing.JTextField txtTCEmail;
     private javax.swing.JTextField txtTCNomeUsuario;
     private javax.swing.JPasswordField txtTCSenha;
     // End of variables declaration//GEN-END:variables
