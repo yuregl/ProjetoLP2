@@ -91,7 +91,7 @@ public class TelaLogin extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/LOGOatt.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/LOGOlogin.png"))); // NOI18N
 
         javax.swing.GroupLayout pnlTelaLoginLayout = new javax.swing.GroupLayout(pnlTelaLogin);
         pnlTelaLogin.setLayout(pnlTelaLoginLayout);
@@ -101,9 +101,9 @@ public class TelaLogin extends javax.swing.JFrame {
                 .addGap(46, 46, 46)
                 .addGroup(pnlTelaLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnlTelaLoginLayout.createSequentialGroup()
-                        .addGap(91, 91, 91)
+                        .addGap(100, 100, 100)
                         .addComponent(btnTLEntra)
-                        .addGap(119, 119, 119)
+                        .addGap(110, 110, 110)
                         .addComponent(btnTLCadastra))
                     .addGroup(pnlTelaLoginLayout.createSequentialGroup()
                         .addGroup(pnlTelaLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -117,7 +117,7 @@ public class TelaLogin extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlTelaLoginLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 319, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(69, 69, 69))
+                .addGap(79, 79, 79))
         );
         pnlTelaLoginLayout.setVerticalGroup(
             pnlTelaLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
