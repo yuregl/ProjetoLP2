@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 
 public class Usuario implements Serializable{
+    private String email;
     private String nomeUsuario;
     private String senha;
     private int partidasGanhas;
@@ -14,6 +15,14 @@ public class Usuario implements Serializable{
         this.senha = senha;
         this.partidasGanhas = 0;
         this.partidasJogadas = 0;
+    }
+    
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
     
     public String getNomeUsuario() {
